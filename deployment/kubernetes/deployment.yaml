@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: incident-intel-engine
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: incident-intel-engine
+  template:
+    metadata:
+      labels:
+        app: incident-intel-engine
+    spec:
+      containers:
+      - name: incident-intel-engine
+        image: incident-intel-engine:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - configMapRef:
+            name: incident-intel-engine-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: incident-intel-engine
+spec:
+  type: ClusterIP
+  selector:
+    app: incident-intel-engine
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000

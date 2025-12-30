@@ -1,0 +1,4 @@
+{
+  "source": "email",
+  "raw_text": "User alice@company.com received a suspicious email with the subject 'Urgent: Update Your Password'. The email contained a malicious link: http://malicious.example.com. No credentials entered."
+}

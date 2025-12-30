@@ -1,0 +1,8 @@
+{
+  "name": "Notification Flow",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "notify"}, "name": "Webhook", "type": "n8n-nodes-base.webhook"},
+    {"parameters": {"functionCode": "return [{ json: { notified: true, incident: $json } }];"}, "name": "Acknowledge", "type": "n8n-nodes-base.function"}
+  ],
+  "connections": {"Webhook": [ {"node": "Acknowledge", "type": "main", "index": 0} ]}
+}

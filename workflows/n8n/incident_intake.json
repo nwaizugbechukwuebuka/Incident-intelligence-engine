@@ -1,0 +1,9 @@
+{
+  "name": "Incident Intake",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "incident-intake"}, "name": "Webhook", "type": "n8n-nodes-base.webhook"},
+    {"parameters": {"functionCode": "return [{ json: { received: true, incident: $json } }];"}, "name": "Acknowledge", "type": "n8n-nodes-base.function"},
+    {"parameters": {"url": "http://incident-intelligence-engine:8000/ingest", "method": "POST", "jsonParameters": true, "options": {}, "bodyParametersJson": "={{$json.incident}}"}, "name": "Send to API", "type": "n8n-nodes-base.httpRequest"}
+  ],
+  "connections": {"Webhook": [ {"node": "Acknowledge", "type": "main", "index": 0} ], "Acknowledge": [ {"node": "Send to API", "type": "main", "index": 0} ]}
+}

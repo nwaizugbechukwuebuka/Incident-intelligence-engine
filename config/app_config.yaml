@@ -1,0 +1,8 @@
+app:
+  name: Incident Intelligence Engine
+  env: ${APP_ENV}
+  log_level: ${LOG_LEVEL}
+  llm_provider: ${LLM_PROVIDER}
+  n8n_api_url: ${N8N_API_URL}
+  n8n_api_key: ${N8N_API_KEY}
+  database_url: ${DATABASE_URL}

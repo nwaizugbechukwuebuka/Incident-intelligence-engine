@@ -10,22 +10,22 @@
 
 ## 🎯 Project Overview
 
-**Incident Intelligence Engine** transforms unstructured security and operations incident reports into structured, actionable intelligence using Large Language Models (LLMs) and n8n automation. Designed for modern SOCs and IT teams, it automates entity extraction, incident classification, severity scoring, and orchestrates response workflows—delivering real-time insights and accelerating incident response.
+**Incident Intelligence Engine** transforms unstructured security and operations incident reports into structured, actionable intelligence using Large Language Models (LLMs) and n8n automation. Built for modern SOCs and IT teams, it automates entity extraction, incident classification, severity scoring, and orchestrates response workflows—delivering real-time insights and accelerating incident response.
 
 ---
 
 ## 🎥 Project Walkthrough Video
 
-The Incident Intelligence Engine is an AI-powered platform that helps security and IT teams turn messy, unstructured incident reports into clear, actionable intelligence—fast. It automates the entire process: from taking in raw incident data, to extracting key details with LLMs, to triggering the right response workflows. This means less manual work, faster response times, and more reliable outcomes for organizations of any size.
+The Incident Intelligence Engine is an AI-powered platform that enables security and IT teams to rapidly convert unstructured incident reports into clear, actionable intelligence. The platform automates the entire workflow: from ingesting raw incident data, to extracting key details with LLMs, to triggering the appropriate response workflows. This results in less manual effort, faster response times, and more reliable outcomes for organizations of any size.
 
 **How It Works (End-to-End):**
-1. **Incident Ingestion:** The system receives incidents via email, file upload, or webhook—no manual copy-paste needed.
+1. **Incident Ingestion:** The system receives incidents via email, file upload, or webhook—eliminating manual copy-paste.
 2. **Preprocessing:** Incoming text is cleaned and normalized for consistency.
 3. **Intelligence Extraction:** LLMs extract entities, classify the incident, and score severity and confidence.
-4. **Automation & Escalation:** n8n workflows automatically notify, escalate, or integrate with other tools—no human bottlenecks.
+4. **Automation & Escalation:** n8n workflows automatically notify, escalate, or integrate with other tools—removing human bottlenecks.
 
 **▶️ Project Walkthrough Video:**  
-[![Watch the walkthrough](https://youtu.be/mO0wQ792_Gk)]
+[![Watch the walkthrough](https://img.youtube.com/vi/mO0wQ792_Gk/0.jpg)](https://youtu.be/mO0wQ792_Gk)
 
 **Suggested 60–120 Second Narration Outline:**
 - Introduce the project’s real-world value for security/IT teams and organizations.
@@ -208,5 +208,3 @@ MIT License © 2025 Chukwuebuka Tobiloba Nwaizugbe
 [![Discord](https://img.shields.io/badge/Join%20us%20on-Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/TY9uwSgK)
 
 </div>
-#   I n c i d e n t - i n t e l l i g e n c e - e n g i n e  
- 

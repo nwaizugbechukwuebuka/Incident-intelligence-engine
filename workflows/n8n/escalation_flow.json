@@ -1,0 +1,9 @@
+{
+  "name": "Escalation Flow",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "escalate"}, "name": "Webhook", "type": "n8n-nodes-base.webhook"},
+    {"parameters": {"functionCode": "if ($json.severity === 'Critical') { return [{ json: { escalate: true, incident: $json } }]; } else { return [{ json: { escalate: false, incident: $json } }]; }"}, "name": "Check Severity", "type": "n8n-nodes-base.function"},
+    {"parameters": {"url": "http://incident-intelligence-engine:8000/notify", "method": "POST", "jsonParameters": true, "options": {}, "bodyParametersJson": "={{$json.incident}}"}, "name": "Notify", "type": "n8n-nodes-base.httpRequest"}
+  ],
+  "connections": {"Webhook": [ {"node": "Check Severity", "type": "main", "index": 0} ], "Check Severity": [ {"node": "Notify", "type": "main", "index": 0} ]}
+}
