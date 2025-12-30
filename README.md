@@ -25,7 +25,7 @@ The Incident Intelligence Engine is an AI-powered platform that enables security
 4. **Automation & Escalation:** n8n workflows automatically notify, escalate, or integrate with other tools—removing human bottlenecks.
 
 **▶️ Project Walkthrough Video:**  
-[![Watch the walkthrough](https://img.youtube.com/vi/mO0wQ792_Gk/0.jpg)]([[https://youtu.be/mO0wQ792_Gk?si=bPl5DqTY8fjw0wSU])
+[![Watch the walkthrough](https://img.youtube.com/vi/mO0wQ792_Gk/0.jpg)](https://youtu.be/mO0wQ792_Gk?si=bPl5DqTY8fjw0wSU)
 
 **Suggested 60–120 Second Narration Outline:**
 - Introduce the project’s real-world value for security/IT teams and organizations.
