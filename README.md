@@ -198,7 +198,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/secur
 ## 📄 License
 
 
-MIT License © 2025 Chukwuebuka Tobiloba Nwaizugbe
+MIT License © 2025 DeepWork Society Team
 
 <div align="center">
 
